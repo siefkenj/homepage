@@ -1,0 +1,211 @@
+/* header and main page */
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+	
+	background: url("../images/paper-tile.jpg") repeat scroll 0 0 #FFFAFA;
+	color: #333333;
+	line-height: 22px;
+	text-rendering: optimizelegibility;
+}
+#page {
+	background: url("../images/graph-tile.png") repeat scroll center top transparent;
+	margin: 20px auto;
+	padding: 30px 17px 10px;
+	max-width: 946px;
+	border-radius: 40px;
+}
+h1,h2,h3 {
+	font-family: Bevan, serif;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+	color: #D24B21;
+}
+a:hover {
+	color: #BA1820;
+}
+
+/* sections */
+.section {
+	background: #fbfbfb;
+	background: rgba(251,251,251,.4);
+	border: 1px solid #DDDDDD;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 5px;
+	margin-bottom: 20px;
+}
+
+/* header */
+#name {
+	width: 100%;
+	margin: auto;
+	padding-bottom: 40px;
+	clear: both;
+	float: center;
+	background: url("../images/underline.png") repeat-x scroll center bottom transparent;
+	color: #333;
+	cursor: default;
+}
+#name:hover {
+	color: #BA1820;
+}
+#name h2 {
+	font-family: "Times New Roman", "Times", serif;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	color: #999;
+}
+#name h1 {
+	font-family: 'Playfair Display', "Bevan", serif;
+	font-weight: 900;
+	font-size: 38px;
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* navigation area */
+#nav li {
+	background: #fbfbfb;
+	background: rgba(251,251,251,.4);
+	border: 1px solid #DDDDDD;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+	color: #D24B21;
+	float: left;
+	padding: 10px;
+	text-align: center;
+	width: 203px;
+	list-style-type: none;
+	margin: 5px;
+}
+#nav li:hover {
+	background: #fbfbfb;
+}
+#nav {
+	background: url("../images/underline.png") repeat-x scroll center bottom transparent;
+	margin: 12px 0 30px;
+	padding: 0 0 38px;
+	clear: both;
+	float: left;
+}
+
+#nav a {
+	text-decoration: none;
+	color: inherit;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: 19px;
+	font-weight: 300;
+}
+#nav img {
+	width: 100%;
+}
+
+.email {
+	color: gray;
+}
+
+/* paper citations */
+#papers a {
+	text-decoration: none;
+}
+#papers ul {
+	padding: 0;
+	margin-left: 20px;
+}
+#papers li {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: .5em;
+}
+.authors {
+	display: inline;
+	color: #333;
+}
+.authors li {
+	display: inline;
+	list-style-type: none;
+}
+.authors li:after {
+	content: ', ';
+}
+.authors li:last-child:after {
+	content: '';
+}
+
+.title {
+	font-style: italic;
+}
+.citation {
+	font-size: .9em;
+	color: gray;
+}
+
+
+/* Software */
+#software ul {
+	padding: 0;
+	margin: 0;
+}
+#software li {
+	list-style-type: none;
+	margin-bottom: 1em;
+}
+#software li p {
+	margin: 0 2em 0 2em;
+}
+#software li a {
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+/* footer */
+#footer p {
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+	color: gray;
+}
+
+
+
+/* Helpers */
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
