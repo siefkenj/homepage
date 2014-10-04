@@ -1,3 +1,18 @@
+/* web fonts */
+@font-face {
+	font-family: 'GeosansLite';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./GeosansLight.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'GeosansLite';
+	font-style: italic;
+	font-weight: 400;
+	src: url('./GeosansLight-Oblique.ttf') format('ttf');
+} 
+
+
 /* header and main page */
 body {
 	height: 100%;
@@ -56,6 +71,7 @@ a:hover {
 	background: url("../images/underline.png") repeat-x scroll center bottom transparent;
 	color: #333;
 	cursor: default;
+	transition: color 1s;
 }
 #name:hover {
 	color: #BA1820;
@@ -93,6 +109,7 @@ a:hover {
 	width: 203px;
 	list-style-type: none;
 	margin: 5px;
+	transition: background .3s;
 }
 #nav li:hover {
 	background: #fbfbfb;
@@ -130,7 +147,7 @@ a:hover {
 	padding: 0;
 	margin-left: 20px;
 }
-#papers li {
+#papers li, #courses li {
 	list-style-type: none;
 	padding: 0;
 	margin-bottom: .5em;
@@ -156,6 +173,17 @@ a:hover {
 .citation {
 	font-size: .9em;
 	color: gray;
+}
+
+.term {
+	font-size: smaller;
+}
+.course-title {
+	display: block;
+	font-weight: bold;
+}
+book {
+	font-style: italic;
 }
 
 
