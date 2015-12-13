@@ -199,7 +199,7 @@ book {
 #software li p {
 	margin: 0 2em 0 2em;
 }
-#software li a {
+#software li > a {
 	font-size: 1.2em;
 	font-weight: 300;
 }
