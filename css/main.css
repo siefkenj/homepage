@@ -210,9 +210,18 @@ book {
 }
 
 .cf {
-	border: 8px solid rgb(180, 170, 154);
 	display: inline-block;
 	background-image: url("../images/jason-climb.jpg");
+	background-repeat: no-repeat;
+	background-position: 7px 7px;
+	margin: 06px 0 2px 0;
+	padding: 7px;
+	background-color: #FFFAFA;
+
+	border: 1px solid #ddd;
+	-webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+	-moz-box-shadow: 1px 1px 5px rgba(153, 153, 153, 0.2);
+	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
 }
 
 .cf img {
