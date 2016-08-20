@@ -204,6 +204,27 @@ book {
 	font-weight: 300;
 }
 
+.myface {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.cf {
+	border: 8px solid rgb(180, 170, 154);
+	display: inline-block;
+	background-image: url("../images/jason-climb.jpg");
+}
+
+.cf img {
+	display: block;
+	transition: opacity 1s ease-in-out;
+}
+
+.cf img:hover {
+	opacity: 0;
+}
+
+
 /* footer */
 #footer p {
 	margin: 0px;
