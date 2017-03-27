@@ -27,7 +27,7 @@ body {
 	background: url("../images/paper-tile.jpg") repeat scroll 0 0 #FFFAFA;
 	color: #333333;
 	line-height: 22px;
-	text-rendering: optimizelegibility;
+	text-rendering: geometricPrecision;
 }
 #page {
 	background: url("../images/graph-tile.png") repeat scroll center top transparent;
@@ -128,12 +128,13 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	display: block;
-	font-size: 19px;
+	font-size: 130%;
 	font-weight: 300;
 }
 #nav img {
 	width: 100%;
 }
+
 
 .email {
 	color: gray;

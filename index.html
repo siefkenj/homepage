@@ -2,6 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 	<title>Jason Siefken | Fighting the Math</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic,300|Bevan|Playfair+Display:900' rel='stylesheet' type='text/css'>
@@ -18,15 +21,80 @@
 			</div>
 		</div>
 		<ul id="nav">
+			<li><a href="#about">About Me</a></li>
 			<li><a href="#papers">Papers</a></li>
+			<li><a href="#resources">Resources</a></li>
 			<li><a href="#software">Software</a></li>
 			<li><a href="#courses">Courses</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
+	<div id="about" class="section">
+		<h2>About Me</h2>
+		<p>
+		My name is Jason Siefken, and I am a professional mathematician who focuses
+		on dynamical systems and mathematics education.  I earned my PhD from the University
+		of Victoria in 2015, spent some time as a postdoc at Northwestern University, and am
+		now an Assistant Professor, Teaching Stream at the University of Toronto.
+		</p>
+
+		<h3>Dynamical Systems</h3>
+		<p>
+			My mathematical research focuses on <i>dynamical systems</i> and <i>ergodic
+			theory</i>.  At its most general, a dynamical system is a
+			set and a transformation that moves around points in the set&mdash;think
+			the air molecules on earth and the wind as it blows them around.
+		</p>
+		<p>
+			The idea of a dynamical system is very general.  It's too general to actually be useful,
+			so mathematicians don't study dynamical systems in general.  They study dynamical systems
+			with specific properties.  For exam, a dynamical system is called <i>mixing</i> if
+			any two points eventually end up close to eachother.  They may get far apart after that,
+			but at some point they must get close.
+		</p>
+		<p>
+			Once properties such as mixing (or a very special property called <i>ergodicity</i>) get
+			added to a dynamical system, suddenly you can start proving things about them.
+			That's what I do.
+		</p>
+
+		<h3>Mathematics Education</h3>
+		<p>
+			My ultimate goal is to make the world a better place.  Right now I'm working
+			on that by teaching people (and sometimes computers) how to use
+			mathematics to aid their thinking.  This is hard!  Though mathematics can be fun,
+			it doesn't come natural to most of us&mdash;unlike your natural tendency to 
+			pick up your mother tongue, you don't inevitably stumble onto the conclusion
+			that <i>when approaching a problem the first thing you should do is write 
+				down everything you know</i>.  No,  this is one of the many mathematical
+			habits of mind that only comes through training.
+		</p>
+		<p>
+			If you want to see more about my philosophy of teaching, you can check
+			out my <a href=papers/teaching-statement.pdf">Teaching Statement</a>.
+			Briefly summarized, I believe you learn by doing, being challenged,
+			and forcing your brain to rewire itself.  I am a big proponent of Active Learning,
+			Inquiry Based Learning, and the Flipped Classroom (the list could go on and on).
+			I am an 2016 MAA Project NeXT Fellow (go green dots!) and a TIMES Linear Algebra Fellow.
+		</p>
+	</div>
 	<div id="papers" class="section">
 		<h2>Papers</h2>
 		<ul>
+			<li>
+				<a href='https://github.com/siefkenj/MultivariableCalculus/raw/master/src/MultivariableCalculus.pdf'>
+					<ul class="authors"><li>Evans, L.</li><li>Siefken, J.</li><li>et al.</li></ul>
+					<span class="title">Multivariable Calculus</span>
+					<span class="citation">in-progress multivariable calculus textbook</span>
+				</a>
+			</li>
+			<li>
+				<a href='papers/reg-time.pdf'>
+					<ul class="authors"><li>Siefken, J.</li></ul>
+					<span class="title">Registration Delay and Student Performance</span>
+					<span class="citation">Journal of the Scholarship of Teaching and Learning (accepted)</span>
+				</a>
+			</li>
 			<li>
 				<a href='papers/kc-minimality.pdf'>
 					<ul class="authors"><li>Siefken, J.</li></ul>
@@ -76,6 +144,20 @@
 					<span class="citation">(2008) Honors Thesis.</span>
 				</a>
 			</li>
+		</ul>
+	</div>
+	<div id="resources" class="section">
+		<h2>Resources</h2>
+		<p>
+			I've seen some incredible things throughout my travels, and I've collected a few.
+		</p>
+		<h3>Teaching Resources</h3>
+		<ul>
+			<li>The TIMES project's <a href="http://iola.math.vt.edu/">Inquiry Oriented Linear Algebra</a> website</li>
+			<li>The <a href="http://iola.math.vt.edu/">IMAGEmath</a> project introduces real analysis and metric spaces via image denoising,
+			differential equations through heat diffusion, and linear algebra through x-ray tomography.</li>
+			<li>The <a href="http://www.maa.org/press/periodicals/convergence/primary-historical-sources-in-the-classroom-discrete-mathematics-and-computer-science">Primary Historical Sources</a> project aims
+			to provide excerpts from primary historical sources that are suitable for use in introductory mathematics classes.</li>
 		</ul>
 	</div>
 	<div id="software" class="section">
@@ -155,21 +237,58 @@
 	<div id="courses" class="section">
 		<h2>Courses</h2>
 		<p>
-		<span class="course-title">Multivariable Calculus for ISP</span>
-		<span class="term">Fall 2016</span>,
-		<span class="course">Math 281-1</span>
-		<a href="http://math.northwestern.edu/~siefkenj/math281-1">Course Webpage</a>.
-		</p>
-
-		<p>
-		<span class="course-title">Linear Algebra</span>
-		<span class="term">Fall 2016</span>,
-		<span class="course">Math 240</span>
-		<a href="http://math.northwestern.edu/~siefkenj/math240">Course Webpage</a>.
+		<span class="course-title">Linear Algebra for ISP</span>
+		<span class="term">Spring 2017</span>,
+		<span class="course">Math 281-3</span>
+		<a href="http://math.northwestern.edu/~siefkenj/math281-3">Course Webpage</a>.
 		</p>
 
 		<h3>Previous Courses</h3>
 		<ul>
+			<li><span class="course-title">Differential Equations for ISP</span>
+			<span class="term">Winter 2017</span>,
+			<span class="course">Math 281-2</span>
+			<p>
+				Math 281-2 is the second term in a year-long math sequence
+				for students in Northwestern's Integrated Sciences Program.
+			</p>
+			</li>
+			<li><span class="course-title">Multivariable Calculus</span>
+			<span class="term">Winter 2017</span>,
+			<span class="course">Math 230</span>
+			<p>
+				Math 230 is a one-term Multivariable calculus class
+				covering differentiation but not integration.
+			</p>
+			</li>
+			<li><span class="course-title">Multi-variable Calculus for ISP</span>
+			<span class="term">Fall 2016</span>,
+			<span class="course">Math 281-1</span>
+			<p>
+				Math 281-1 is the first term in a year-long math sequence
+				for students in Northwestern's Integrated Sciences Program.  Essentially,
+				this course may be thought of as an honors section of Multi-variable
+				calculus.
+
+				Again, I used an inquiry-based approach based on guided worksheets
+				 available
+				<a href="https://github.com/siefkenj/IBLVectorCalculus">here</a>.
+			</p>
+			</li>
+			<li><span class="course-title">Linear Algebra</span>
+			<span class="term">Fall 2016</span>,
+			<span class="course">Math 240</span>
+			<p>
+				Math 240 is a one-term linear algebra course.
+				This class was conducted using a mix of the <a href="http://iola.math.vt.edu/">Inquiry Oriented
+					Linear Algebra</a> materials as worksheets I developed for
+				previous linear algebra courses.  This course also included problemsets
+				based on the 
+				<a href="http://link.springer.com/article/10.1007/s40753-015-0005-y">Peer-Assisted Reflection</a>
+				(PAR) model of Daniel Reinholz.
+			</p>
+			</li>
+
 			<li><span class="course-title">Multivariable Calculus</span>
 			<span class="term">Spring 2016</span>,
 			<span class="course">Math 230</span>
