@@ -12,10 +12,24 @@
 	src: url('./GeosansLight-Oblique.ttf') format('ttf');
 } 
 
+@import url('https://fonts.googleapis.com/css?family=Exo:600,800');
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+:root {
+	--accent-color: #f0f000;
+}
+
 
 /* header and main page */
 body {
-	height: 100%;
+	min-height: 100vh;
 	width: 100%;
 	position: absolute;
 	font-size: 14px;
@@ -24,102 +38,93 @@ body {
 	font-family: 'Muli', sans-serif;
 	font-weight: 400;
 	
-	background: url("../images/paper-tile.jpg") repeat scroll 0 0 #FFFAFA;
-	color: #333333;
+	/*background: url("../images/paper-tile.jpg") repeat scroll 0 0 #FFFAFA;*/
 	line-height: 22px;
 	text-rendering: geometricPrecision;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #4d5355;
 }
-#page {
-	background: url("../images/graph-tile.png") repeat scroll center top transparent;
-	margin: 20px auto;
-	padding: 30px 17px 10px;
-	max-width: 946px;
-	border-radius: 40px;
-}
-h1,h2,h3 {
-	font-family: Bevan, serif;
-	font-weight: normal;
-}
-a {
-	text-decoration: none;
-	color: #D24B21;
-}
-a:hover {
-	color: #BA1820;
-}
-
-/* sections */
-.section {
-	background: #fbfbfb;
-	background: rgba(251,251,251,.4);
-	border: 1px solid #DDDDDD;
-	border-radius: 5px 5px 5px 5px;
-	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 5px;
-	margin-bottom: 20px;
-}
-
 /* header */
-#name {
+#header {
 	width: 100%;
-	margin: auto;
-	padding-bottom: 40px;
-	clear: both;
-	float: center;
-	background: url("../images/underline.png") repeat-x scroll center bottom transparent;
-	color: #333;
-	cursor: default;
-	transition: color 1s;
+	display: flex;
+	/*align-items: baseline;*/
+	flex-direction: row;
+	align-items: stretch;
+	background-image: url("../images/treeback.jpg");
+	box-shadow: 0 0 1em #000000;
 }
-#name:hover {
-	color: #BA1820;
+
+#header #name {
+	padding 3px 3px 3px 3px;
+	font-weight: bold;
+	font-size: 2em;
+	width: 10em;
+	flex: 0 0 250px;
+	font-family: Exo, sans-serif;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(251, 251, 251, 0.87)
 }
-#name h2 {
-	font-family: "Times New Roman", "Times", serif;
-	text-transform: uppercase;
-	width: 100%;
-	text-align: center;
-	padding: 0px;
-	margin: 0px;
-	color: #999;
+
+#tagline {
+	font-weight: 600;
+	font-size: .875em;
+	color: #193aa8;
 }
-#name h1 {
-	font-family: 'Playfair Display', "Bevan", serif;
-	font-weight: 900;
-	font-size: 38px;
-	width: 100%;
-	text-align: center;
-	padding: 0px;
-	margin: 0px;
+.jason {
+	color: #2180d2;
 }
+
 
 /* navigation area */
+#nav {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 #nav li {
 	background: #fbfbfb;
-	background: rgba(251,251,251,.4);
+	background: rgba(251,251,251,.87);
 	border: 1px solid #DDDDDD;
 	border-radius: 5px 5px 5px 5px;
 	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
-	color: #D24B21;
-	float: left;
-	padding: 10px;
+	color: #217ad2;
+	font-family: Exo, sans-serif;
+	font-weight: 600;
 	text-align: center;
-	width: 203px;
 	list-style-type: none;
 	margin: 5px;
-	transition: background .3s;
+	transition: background .3s, box-shadow .3s, color .3s;
+	min-width: 15em;
+	text-shadow: 0 0 3px #dbdbdb;
 }
+#nav li:nth-child(4n){
+	background-position: 0px -20px;
+}
+#nav li:nth-child(4n+1){
+	background-position: 0px -60px;
+}
+#nav li:nth-child(4n+2){
+	background-position: 0px -200px;
+}
+
 #nav li:hover {
-	background: #fbfbfb;
-}
-#nav {
-	background: url("../images/underline.png") repeat-x scroll center bottom transparent;
-	margin: 12px 0 30px;
-	padding: 0 0 38px;
-	clear: both;
-	float: left;
+	background-color: rgba(255, 255, 255, 0.94);
+	box-shadow: 0 0 15px #646363;
+	color: #17afff;
 }
 
 #nav a {
@@ -129,12 +134,57 @@ a:hover {
 	height: 100%;
 	display: block;
 	font-size: 130%;
-	font-weight: 300;
+	padding:10px;
 }
 #nav img {
 	width: 100%;
 }
 
+
+#page {
+	margin: 20px auto;
+	max-width: 70em;
+	text-align: justify;
+}
+h1,h2,h3 {
+	font-family: Exo, sans-serif;
+	font-weight: 600;
+	clear: both;
+}
+h3:before {
+	clear:both; 
+	display: block;
+}
+a {
+	text-decoration: none;
+	color: #217ad2;
+}
+a:hover {
+	color: #17afff;
+}
+
+/* sections */
+.section {
+	background: #fbfbfb;
+	background: rgba(251,251,255,.9);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 1px 7px rgb(0, 0, 0);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 5px;
+	margin-bottom: 20px;
+}
+
+.floatleft {
+	float: left;
+	margin-right: 12px;
+}
+.floatright {
+	float: right;
+	margin-left: 12px;
+}
 
 .email {
 	color: gray;
@@ -202,11 +252,9 @@ book {
 }
 #software li > a {
 	font-size: 1.2em;
-	font-weight: 300;
 }
 
 .myface {
-	margin-top: 15px;
 	text-align: center;
 }
 
@@ -215,7 +263,6 @@ book {
 	background-image: url("../images/jason-climb.jpg");
 	background-repeat: no-repeat;
 	background-position: 7px 7px;
-	margin: 06px 0 2px 0;
 	padding: 7px;
 	background-color: #FFFAFA;
 
@@ -240,24 +287,11 @@ book {
 	margin: 0px;
 	width: 100%;
 	text-align: center;
-	font-weight: 300;
 	color: gray;
 }
 
 
 
-/* Helpers */
-
-/* float clearing for IE6 */
-* html .clearfix{
-  height: 1%;
-  overflow: visible;
-}
-
-/* float clearing for IE7 */
-*+html .clearfix{
-  min-height: 1%;
-}
 
 /* float clearing for everyone else */
 .clearfix:after{
@@ -267,4 +301,19 @@ book {
   height: 0;
   visibility: hidden;
   font-size: 0;
+}
+
+@media only screen and (max-width: 720px) {
+	#header {
+		flex-direction: column;
+	}
+	#header #name {
+		flex: auto;
+		width: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.myface.floatleft {
+		float: none;
+	}
 }
