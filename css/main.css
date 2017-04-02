@@ -306,12 +306,17 @@ book {
 @media only screen and (max-width: 720px) {
 	#header {
 		flex-direction: column;
+		background-image: url("../images/treeback-vert.jpg");
 	}
 	#header #name {
 		flex: auto;
 		width: auto;
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	#nav {
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 	.myface.floatleft {
 		float: none;
