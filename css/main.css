@@ -59,7 +59,7 @@ body {
 }
 
 #header #name {
-	padding 3px 3px 3px 3px;
+	padding: 3px 3px 3px 3px;
 	font-weight: bold;
 	font-size: 2em;
 	width: 10em;
@@ -260,10 +260,8 @@ book {
 
 .cf {
 	display: inline-block;
-	background-image: url("../images/jason-climb.jpg");
 	background-repeat: no-repeat;
 	background-position: 7px 7px;
-	padding: 7px;
 	background-color: #FFFAFA;
 
 	border: 1px solid #ddd;
@@ -272,9 +270,15 @@ book {
 	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
 }
 
+.cf:hover {
+	background-image: url("../images/jason-climb.jpg");
+}
+
 .cf img {
 	display: block;
 	transition: opacity 1s ease-in-out;
+	height: 280px;
+	border: 5px solid #fff;
 }
 
 .cf img:hover {
